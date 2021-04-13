@@ -1,1 +1,186 @@
-
+{
+  "products":[
+    {
+      "category":"t-shirt",
+      "collection":"brent ii",
+      "name": "fall in love tee",
+      "img": "fall-in-love-tee",
+      "price": "32.00"
+    },
+    {
+      "category":"t-shirt",
+      "collection":"brent ii",
+      "name": "ski lodge tee",
+      "img": "ski-lodge-tee",
+      "price": "32.00"
+    },
+    {
+      "category":"t-shirt",
+      "collection":"brent ii",
+      "name": "wildlife reserve tee",
+      "img": "wildlife-reserve-tee",
+      "price": "32.00"
+    },
+    {
+      "category":"t-shirt",
+      "collection":"brent ii",
+      "name": "home away from home crewneck",
+      "img": "home-away-from-home-crewneck",
+      "price": "55.00"
+    },
+    {
+      "category":"t-shirt",
+      "collection":"brent ii",
+      "name": "resort crewneck",
+      "img": "resort-crewneck",
+      "price": "55.00"
+    },
+    {
+      "category":"misc",
+      "collection":"brent ii",
+      "name": "fall in love teddy bear",
+      "img": "fall-in-love-teddy-bear",
+      "price": "30.00"
+    },
+    {
+      "category":"hoodie",
+      "collection":"brent ii",
+      "name": "varsity hoodie",
+      "img": "varsity-hoodie",
+      "price": "68.00"
+    },
+    {
+      "category":"accessory",
+      "collection":"brent ii",
+      "name": "resort hat i",
+      "img": "resort-hat-i",
+      "price": "30.00"
+    },
+    {
+      "category":"accessory",
+      "collection":"brent ii",
+      "name": "resort hat ii",
+      "img": "resort-hat-ii",
+      "price": "30.00"
+    },
+    {
+      "category":"misc",
+      "collection":"brent ii",
+      "name": "home away from home camp mug",
+      "img": "home-away-from-home-camp-mug",
+      "price": "16.00"
+    },
+    {
+      "category":"misc",
+      "collection":"brent ii",
+      "name": "brent ii puzzle",
+      "img": "brent-ii-puzzle",
+      "price": "30.00"
+    },
+    {
+      "category":"misc",
+      "collection":"brent ii",
+      "name": "brent ii copper candle",
+      "img": "brent-ii-copper-candle",
+      "price": "24.00"
+    },
+    {
+      "category":"t-shirt",
+      "collection":"supercuts",
+      "name": "magic 8ball tee",
+      "img": "magic-8ball-tee",
+      "price": "35.00"
+    },
+    {
+      "category":"t-shirt",
+      "collection":"supercuts",
+      "name": "magic 8ball tee ii",
+      "img": "magic-8ball-tee-ii",
+      "price": "35.00"
+    },
+    {
+      "category":"t-shirt",
+      "collection":"supercuts",
+      "name": "school dance tee",
+      "img": "school-dance-tee",
+      "price": "30.00"
+    },
+    {
+      "category":"t-shirt",
+      "collection":"lind",
+      "name": "lind constellation tee i",
+      "img": "lind-constellation-tee-i",
+      "price": "35.00"
+    },
+    {
+      "category":"t-shirt",
+      "collection":"lind",
+      "name": "lind constellation tee ii",
+      "img": "lind-constellation-tee-ii",
+      "price": "35.00"
+    },
+    {
+      "category": "t-shirt",
+      "collection":"lind",
+      "name": "bunny tee",
+      "img": "bunny-tee",
+      "price": "30.00"
+    },
+    {
+      "category": "t-shirt",
+      "collection":"lind",
+      "name": "love tee",
+      "img": "love-tee",
+      "price": "30.00"
+    },
+    {
+      "category": "t-shirt",
+      "collection":"lind",
+      "name": "love tee ii",
+      "img": "love-tee-ii",
+      "price": "30.00"
+    },
+    {
+      "category": "t-shirt",
+      "collection":"lind",
+      "name": "lind starry night tee",
+      "img": "lind-starry-night-tee",
+      "price": "30.00"
+    },
+    {
+      "category": "t-shirt",
+      "collection":"lind",
+      "name": "lind starry night tee ii",
+      "img": "lind-starry-night-tee-ii",
+      "price": "30.00"
+    },
+    {
+      "category": "t-shirt",
+      "collection":"lind",
+      "name": "lind starry night tee iii",
+      "img": "lind-starry-night-tee-iii",
+      "price": "30.00"
+    },
+    {
+      "category": "t-shirt",
+      "collection":"lind",
+      "name": "lind starry night tee iv",
+      "img": "lind-starry-night-tee-iv",
+      "price": "30.00"
+    },
+    {
+      "category": "misc",
+      "collection":"lind",
+      "name": "love is not dying poster",
+      "img": "love-is-not-dying-poster",
+      "price": "25.00"
+    },
+    {
+      "category": "misc",
+      "collection":"lind",
+      "name": "comethru doormat",
+      "img": "comethru-doormat",
+      "price": "55.00"
+    }
+  ]
+}
