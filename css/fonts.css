@@ -1,0 +1,27 @@
+@font-face {
+    font-family: mont-black;
+    src: url(../fonts/Mont-Black.otf);
+}
+
+@font-face {
+    font-family: mont;
+    src: url(../fonts/Mont-Regular.otf);
+}
+
+@font-face {
+    font-family: berlin;
+    src: url(../fonts/Berlin.ttf);
+}
+
+.mont-black {
+    font-family: mont-black, serif;
+}
+
+.mont {
+    font-family: mont, serif;
+}
+
+.berlin {
+    font-family: berlin, serif;
+    letter-spacing: 1.5px;
+}

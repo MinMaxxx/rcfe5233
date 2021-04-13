@@ -1,0 +1,603 @@
+@import 'buttons.css';
+@import 'colors.css';
+@import 'core.css';
+@import 'fonts.css';
+@import 'slideshow.css';
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100%;
+    background-image: url("../img/background.png");
+}
+
+nav {
+    /* Background color of the navbar */
+    background: #f1f2f6;
+    /* Border bottom of the navbar to give distinct line */
+    border-bottom: solid 1px rgba(25, 17, 11, 0.3) /* #19100a */;
+}
+
+.navbar {
+    /* Ensuring that the navbar stay at the same position */
+    position: sticky;
+    /* Padding content */
+    padding: 2.5em;
+    /* border-bottom: #717171 solid 1px; */
+}
+
+.navbar-logo {
+    /* Pointer on hover */
+    cursor: pointer;
+    /* Group the content as inline-block */
+    display: inline-block;
+    /* Font-size of 2em to even the alignment */
+    font-size: 2em;
+    /* Color black */
+    color: black;
+}
+
+.navbar-logo-wrapper {
+    /* Flex display to align the content appropriately */
+    display: flex;
+    /* Flex direction set to row so the content sits next to each other horizontally */
+    flex-direction: row;
+}
+
+.navbar-logo img {
+    /* Initial value from navbar-logo font-size: 2em */
+    width: 2em;
+    /* Realignment of the image */
+    transform: translateY(-15%);
+}
+
+.navbar-logo-placeholder {
+    /* Initial value from navbar-logo font size: 2em */
+    width: 2em;
+    /* Setting position to be relative to the parent's property */
+    position: relative;
+    /* Margin alignment */
+    margin-right: 3%;
+}
+
+.navbar ul {
+    /* Aligning the UL element with the initial value of navbar-logo font-size: 2em */
+    line-height: 3em;
+    /* Display on the right side of the navbar */
+    float: right;
+    /* Clear list style */
+    list-style: none;
+    /* Displaying content inline */
+    display: inline-block;
+}
+
+.navbar ul li {
+    /* Margin spacing */
+    margin-left: 3em;
+    /* Displaying content inline */
+    display: inline-block;
+}
+
+.navbar ul li a {
+    /* Remove default anchor tag text decoration (underline) */
+    text-decoration: none;
+    /* Ensuring all letters are capitalized */
+    text-transform: uppercase;
+    /* Setting color to black */
+    color: black;
+    /* Adding transitioning animation, targeting color with ease animation and in 0.15 seconds */
+    transition: color ease 0.15s;
+}
+
+.navbar ul li a:hover {
+    /* On hover, change the color */
+    color: #a5a5a5;
+}
+
+.title {
+    margin-bottom: 2.5%;
+}
+
+footer {
+    background: #f1f2f6;
+    border-top: solid 1px rgba(25, 17, 11, 0.3) /* #19100a */;
+}
+
+footer img {
+    width: 100%;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer ul li {
+    margin-bottom: 2.5%;
+}
+
+.footer ul li a {
+    transition: color ease 0.15s;
+    color: black;
+}
+
+.footer ul li a:hover {
+    color: #a5a5a5;
+}
+
+#categories .column-25 img {
+    width: 45%;
+}
+
+.newsletter {
+    padding: 2.5% 0;
+    background: #ffcccc;
+}
+
+.notice {
+    padding: 2.5% 0;
+    background: #ffcccc;
+}
+
+.notice-warning {
+    background: #f5cd79;
+}
+
+.newsletter form input {
+    padding: 1%;
+    border: solid 1px rgba(25, 17, 11, 0.3);
+}
+
+footer iframe {
+    width: 100%;
+}
+
+.menu {
+    display: none;
+}
+
+.filter ul {
+    list-style: none;
+}
+
+.filter ul li label {
+    font-size: 1.2em;
+}
+
+.collection {
+    text-decoration: underline;
+    text-decoration-color: #f3a683;
+    text-decoration-style: solid;
+    text-decoration-thickness: 3px;
+    margin-bottom: 1%;
+}
+
+.products {
+    margin-bottom: 1%;
+}
+.qty {
+    user-select: none;
+}
+.qty input {
+    width: 12.5%;
+}
+
+#faqs ul li {
+    margin-top: 2%;
+}
+
+.tos input {
+    width: initial !important;
+}
+
+#contactForm input, #contactForm label, #contactForm textarea {
+    display: block;
+    width: 100%;
+}
+
+#contactForm input, #contactForm textarea {
+    padding: 2%;
+    font-size: 1em;
+    font-family: mont, serif;
+    margin-bottom: 2%;
+}
+
+#contactForm textarea {
+    min-width: 100%;
+    max-width: 100%;
+}
+
+#contactForm input[type="submit"] {
+    width: initial;
+}
+
+#checkout input, select, option {
+    width: 100%;
+    font-family: mont, serif;
+    font-size: 1em;
+}
+
+#checkout input[id="carddate"]{
+    width: 95%;
+    margin-right: 5%;
+}
+
+#checkout input[id="cvc"]{
+    width: 100%;
+}
+
+#checkout input, select {
+    margin-bottom: 2%;
+    padding: 2%;
+}
+
+#checkout input[name="address"]{
+    margin-bottom: 2%;
+}
+
+.address:last-child {
+    margin-bottom: 2%;
+}
+
+.total .row {
+    margin-bottom: 2%;
+    border-radius: 10px;
+    background: #f9fafe;
+}
+
+.payment input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.carddate select {
+    width: 95%;
+    font-size: 1em;
+    padding: 4% !important;
+}
+
+#scrollTop {
+    display: none;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    margin: 30px 50px;
+    font-size: 1em;
+    color: #2f3640;
+    position: fixed;
+    background: rgba(242,166,131,0.9);
+    border-radius: 5px;
+    transition: scale ease 0.3s, opacity 0.5s linear, height 2s step-start;
+    cursor: pointer;
+}
+
+#scrollTop:hover {
+    transform: scale(1.1);
+}
+
+#account {
+    min-height: 50vh;
+}
+
+.signup {
+    display: none;
+}
+
+.login, .signup {
+    background: #f9fafe;
+    border-radius: 5px;
+    width: 50%;
+    margin: auto;
+}
+
+.login a, .signup a {
+    color: black;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #f3a683;
+}
+
+.login input[type="text"], .login input[type="password"], .login input[type="checkbox"], .login input[type="email"],
+.signup input[type="text"], .signup input[type="password"], .signup input[type="checkbox"], .signup input[type="email"] {
+    padding: 2%;
+    font-size: 1em;
+    font-family: mont, serif;
+    margin-bottom: 2%;
+    width: 50%;
+}
+
+.signup input[type="checkbox"] {
+    width: initial;
+}
+
+#cart table tbody tr td {
+    max-width: 33%;
+}
+
+#cart table tbody tr td img {
+    width: 50%;
+}
+
+#cart table {
+    table-layout: fixed;
+    width: 100%;
+    border-spacing: 0;
+    border-radius: 5px;
+}
+
+#cart table tbody tr td:first-child {
+    text-align: center;
+}
+
+#cart table tbody tr td:first-child img {
+
+}
+
+#cart table tbody tr td:last-child {
+    text-align: center;
+}
+
+#cart table tbody tr {
+    background-color: #f9fafe;
+    border-radius: 10px;
+}
+
+#cart table tbody tr > td {
+    padding-bottom: 1em;
+}
+
+#cart table tbody tr td {
+    border: solid #f9fafe;
+}
+
+#profile {
+    font-family: mont, serif;
+}
+
+#profile input, select, option {
+    width: 100%;
+    font-family: mont, serif;
+    font-size: 1em;
+}
+
+#profile input, select {
+    margin-bottom: 2%;
+    padding: 1%;
+}
+
+#profile input[name="address"]{
+    margin-bottom: 2%;
+}
+
+#profile input[type="submit"]{
+    width: initial;
+    margin: auto;
+    display: block;
+}
+
+.profile-sidebar ul {
+    list-style: none;
+}
+
+.profile-sidebar ul li {
+    display: block;
+    padding: 5% 5%;
+    background-color: #f5f6fa;
+    border-left: #f5f6fa solid 5px;
+    cursor: pointer;
+}
+
+.profile-sidebar-active {
+    border-left: #6ab04c solid 5px !important;
+}
+
+#profile {
+    min-height: 50vh;
+}
+
+.order-history-item {
+    border-radius: 10px;
+    background-color: #f5f6fa;
+    margin-bottom: 5%;
+}
+
+@media only screen and (max-width: 576px) { /* Mobile */
+
+    .menu {
+        display: block;
+    }
+
+    .navbar {
+        padding: 2.5%;
+        width: 100%;
+    }
+
+    .navbar-logo-wrapper {
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .navbar-logo-wrapper img {
+        display: none;
+    }
+
+    .navbar-logo a {
+        margin: auto;
+        text-align: center;
+    }
+
+
+    .navbar ul {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        margin-left: 1em;
+        margin-bottom: 1em;
+        display: block;
+    }
+
+    .column-25, .column-50 {
+        width: 100%;
+    }
+    #hero .slideshow-container {
+        height: 50vh;
+    }
+
+    #hero .slideshow-container img {
+        height: 50vh;
+    }
+
+    #hero .slideshow-container .mySlides .text h2 {
+        font-size: 2em;
+    }
+    #hero .slideshow-container .mySlides .text {
+        bottom: 15vh;
+        width: 80%;
+        left: 10%;
+        right: 10%;
+    }
+
+    .prev:hover, .next:hover {
+        background: none;
+        /* background-color: rgba(0,0,0,0.8); */
+    }
+
+    #media iframe {
+        width: 100%;
+    }
+
+    #media .text {
+        bottom: 0;
+    }
+
+    section {
+        padding: 5% 0;
+    }
+
+    #hero {
+        padding-top: 0 !important;
+    }
+
+    .newsletter form {
+        text-align: center;
+    }
+
+    .newsletter form input {
+        display: block;
+        margin: auto;
+    }
+
+    #categories .column-25 img {
+        width: 25%;
+    }
+
+    #categories .column-25 {
+        margin-bottom: 10%;
+    }
+
+    #notice p {
+        padding: 0 2.5%;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .login, .signup {
+        width: 100%;
+    }
+
+    #cart table tbody tr td img {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 1152px){ /* PC */
+    #media iframe {
+        width: 100%;
+    }
+    .column-75-25 {
+        min-height: 400px;
+    }
+
+
+    .filter {
+        padding: 0 5%;
+    }
+
+}
+
+@media only screen and (max-width: 768px){ /* Tablet */
+
+    .menu {
+        display: block;
+    }
+
+    .filter {
+        padding: 0 5%;
+    }
+
+    .navbar-logo {
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+
+    .navbar-logo-wrapper {
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .navbar ul {
+        display: block;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        margin-left: 1em;
+        margin-bottom: 1em;
+        display: block;
+    }
+
+    .column-25 {
+        width: 100%;
+    }
+
+    .column-75 {
+        width: 100%;
+    }
+
+    .column-75-25 {
+        width: 50%;
+    }
+
+    .column-75-25 {
+        min-height: 350px;
+    }
+
+    .filter {
+        padding: 0 5%;
+    }
+
+
+    #categories .column-25 img {
+        width: 25%;
+    }
+
+    #categories .column-25 {
+        margin-bottom: 10%;
+    }
+
+    .login, .signup {
+        width: 100%;
+    }
+
+    #scrollTop {
+        margin: 10px;
+    }
+}

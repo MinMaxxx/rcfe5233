@@ -1,0 +1,45 @@
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: mont, serif;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    transition: background-color 0.3s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover, .btn:focus {
+    box-shadow: 0px 0px 5px #000;
+}
+
+.btn-primary {
+    color: black;
+    background-color: #f5cd79;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    color: #2f3640;
+    background-color: #f5f6fa;
+}
+
+.btn-secondary {
+    color: black;
+    background-color: #f3a683;
+}
+
+.btn-secondary:hover, .btn-secondary:focus {
+    color: #2f3640;
+    background-color: #f5f6fa;
+}
+
+.btn-success {
+    color: black;
+    background-color: #6ab04c;
+}
+
+.btn-success:hover, .btn-success:focus {
+    color: #2f3640;
+    background-color: #f5f6fa;
+}
