@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AvantApparel - Profile</title>
+    <meta name="description" content="AvantApparel - Login/Signup - Track Your Order"/>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <script src="js/core.js" defer></script>
+</head>
+<body id="main">
+<span id="top"></span>
+<div id="scrollTop" onclick="scrollSmoothTo('top')">
+    <h2 ><i class="fa fa-arrow-up fa-lg" aria-hidden="true"></i>&#8203;</h2>
+</div>
+
+<nav>
+    <div class="container">
+        <div class="navbar">
+            <a class="navbar-logo mont-black" href="index.html"> <!-- Use display flex  TODO -->
+                <div class="navbar-logo-wrapper">
+                    <img src="img/logo.png" alt="Logo">
+                    <h3>AvantApparel</h3>
+                </div>
+            </a>
+            <ul class="mont" id="navbar-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="support.html" >Support</a></li>
+                <li><a href="account.html" class="navbar-active">Account</a></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <span class="menuButton" onclick="menu()"><i class="fa fa-bars" aria-hidden="true"></i></span>
+        </div>
+        <div class="clear"></div>
+    </div>
+</nav>
+
+<section id="notice" class="m-t-3 m-b-3">
+    <div class="container">
+        <div class="row">
+            <div class="notice text-center mont">
+                <div class="title">
+                    <h2 class="mont-black"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Email Verification</h2>
+                </div>
+                <p>It seems like your account hasn't been verified yet! Please verify your account by confirming your email!</p>
+                <br>
+                <button class="btn btn-secondary" style="border:none;" onclick="hideNotice()">Resend Email Verification</button>
+                <button class="btn btn-secondary" style="border:none;" onclick="hideNotice()">Dismiss</button>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</section>
+
+<section id="profile" class="">
+    <div class="container">
+        <div class="row">
+            <div class="column-25">
+                <div class="profile-sidebar" id="profile-sidebar">
+                    <ul>
+                        <li id="profile-sidebar-details" class="profile-sidebar-active" onclick="profileSidebar('details')">My Profile</li>
+                        <li id="profile-sidebar-order-history" onclick="profileSidebar('order-history')">Order History</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="details" class="column-75 p-0-1">
+                <h2 class="mont-black text-center">Details</h2>
+                <form>
+                    <label for="email">* Email</label>
+                    <br>
+                    <input type="email" id="email" placeholder="Enter your email" value="JohnSmith@gmail.com" required>
+                    <br>
+                    <label for="fname">* Name</label>
+                    <br>
+                    <input type="text" id="fname" name="fname" placeholder="Enter your name" value="John Smith" required>
+                    <br>
+                    <div class="address">
+                        <label for="address">* Address</label>
+                        <br>
+                        <input type="text" id="address" name="address" placeholder="Enter your address" value="Townhall" required>
+                        <br>
+                        <input type="text" id="address2" name="address" placeholder="Enter your address" value="Rathmines">
+                        <br>
+                        <input type="text" id="address3" name="address" placeholder="Enter your address" value="Dublin 6">
+                    </div>
+                    <br>
+                    <label for="eircode">* Eircode</label>
+                    <br>
+                    <input type="text" id="eircode" name="eircode" placeholder="Enter your EIRCODE" value="D01 X123" required>
+                    <br>
+                    <label for="county">* County</label>
+                    <br>
+                    <select name="county" id="county">
+                        <option value="" disabled>Select your county</option>
+                        <option value="Dublin" selected>Dublin</option>
+                        <option value="Cork">Cork</option>
+                        <option value="Galway">Galway</option>
+                    </select>
+                    <br>
+                    <label for="phoneno">* Phone Number</label>
+                    <br>
+                    <input type="number" id="phoneno" name="phoneno" maxlength="10" placeholder="Enter your phone number" value="0871234567" required>
+                    <br>
+                    <br>
+                    <br>
+                    <input type="submit" value="Save Details" class="btn btn-success">
+                </form>
+            </div>
+            <div id="order-history" class="column-75 p-0-1" style="display: none">
+                <h2 class="mont-black text-center">Order History</h2>
+                <div class="row m-t-3">
+                    <div class="order-history-item m-t-1">
+                        <div class="column-50">
+                            <div class="m-auto text-center">
+                                <p>Order #123456789</p>
+                            </div>
+                        </div>
+                        <div class="column-50">
+                            <div class="m-auto text-center">
+                                <a href="order.html" class="btn btn-primary">View Order</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer">
+            <div class="row mont">
+                <div class="column-25 text-center p-1">
+                    <h2 class="mont-black">AvantApparel</h2>
+                    <img src="img/lind.png" alt="love is not dying logo">
+                    <p>&copy;AvantApparel 2021</p>
+                </div>
+                <div class="column-25 p-1">
+                    <h2 class="mont-black">&nbsp;</h2>
+                    <p>Passion, innovation
+                        & ethical practices for
+                        the clothing industry.</p>
+                </div>
+                <div class="column-25 p-1">
+                    <h3 class="mont-black">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="support.html">Support</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </div>
+                <div class="column-25 p-1">
+                    <h3 class="mont-black">Contact Us</h3>
+                    <ul>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i> +353 1 2345678</li>
+                        <li><a href="mailto:contact@avantapparel.ie"><i class="fa fa-envelope" aria-hidden="true"></i>contact@avantapparel.ie</a></li>
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>Dublin, Ireland.</li>
+                        <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1684.0749135189828!2d-6.261112573945801!3d53.34967188390748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e84328060f1%3A0xa8fbd9fe81c43c02!2sSpire!5e0!3m2!1sen!2sie!4v1612288259529!5m2!1sen!2sie" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</footer>
+</body>
+</html>

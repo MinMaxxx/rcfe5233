@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AvantApparel - Cart</title>
+    <meta name="description" content="AvantApparel - Explore The World Of Quality Apparel - Discover Niche Collections - Shop Quality Apparel Online!"/>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <script src="js/core.js" defer></script>
+    <script src="js/login-signup.js" defer></script>
+</head>
+<body id="main">
+<span id="top"></span>
+<div id="scrollTop" onclick="scrollSmoothTo('top')">
+    <h2 ><i class="fa fa-arrow-up fa-lg" aria-hidden="true"></i>&#8203;</h2>
+</div>
+
+<nav>
+    <div class="container">
+        <div class="navbar">
+            <a class="navbar-logo mont-black" href="index.html"> <!-- Use display flex  TODO -->
+                <div class="navbar-logo-wrapper">
+                    <img src="img/logo.png" alt="Logo">
+                    <h3>AvantApparel</h3>
+                </div>
+            </a>
+            <ul class="mont" id="navbar-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="navbar-active">Shop</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="account.html" >Account</a></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <span class="menuButton" onclick="menu()"><i class="fa fa-bars" aria-hidden="true"></i></span>
+        </div>
+        <div class="clear"></div>
+    </div>
+</nav>
+
+<section id="cart">
+    <div class="container">
+        <div class="row mont p-2">
+            <div class="title text-center mont-black">
+                <h2>Cart</h2>
+            </div>
+            <table>
+                <tbody>
+                <tr>
+                    <td><img src="img/products/fall-in-love-tee.png" alt="Product: Example Product"></td>
+                    <td>
+                        <h2>Example Product</h2><br>
+                        <p>Size: Small</p>
+                        <p>Quantity: 1</p>
+                    </td>
+                    <td><h2>$30.00</h2></td>
+                </tr>
+                <tr>
+                    <td><img src="img/products/fall-in-love-teddy-bear.png" alt="Product: Example Product"></td>
+                    <td>
+                        <h2>Example Product</h2><br>
+                        <p>Size: Small</p>
+                        <p>Quantity: 1</p>
+                    </td>
+                    <td><h2>$30.00</h2></td>
+                </tr>
+                <tr>
+                    <td><img src="img/products/love-tee.png" alt="Product: Example Product"></td>
+                    <td>
+                        <h2>Example Product</h2><br>
+                        <p>Size: Small</p>
+                        <p>Quantity: 1</p>
+                    </td>
+                    <td><h2>$30.00</h2></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><h2 class="text-right mont-black">Total:</h2></td>
+                    <td><h2 class="mont-black">$90.00</h2></td>
+                </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <br>
+            <div class="m-t-3 text-center">
+                <a href="checkout.html" class="btn btn-primary">Checkout</a>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer">
+            <div class="row mont">
+                <div class="column-25 text-center p-1">
+                    <h2 class="mont-black">AvantApparel</h2>
+                    <img src="img/lind.png" alt="love is not dying logo">
+                    <p>&copy;AvantApparel 2021</p>
+                </div>
+                <div class="column-25 p-1">
+                    <h2 class="mont-black">&nbsp;</h2>
+                    <p>Passion, innovation
+                        & ethical practices for
+                        the clothing industry.</p>
+                </div>
+                <div class="column-25 p-1">
+                    <h3 class="mont-black">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="support.html">Support</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </div>
+                <div class="column-25 p-1">
+                    <h3 class="mont-black">Contact Us</h3>
+                    <ul>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i> +353 1 2345678</li>
+                        <li><a href="mailto:contact@avantapparel.ie"><i class="fa fa-envelope" aria-hidden="true"></i>contact@avantapparel.ie</a></li>
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>Dublin, Ireland.</li>
+                        <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1684.0749135189828!2d-6.261112573945801!3d53.34967188390748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e84328060f1%3A0xa8fbd9fe81c43c02!2sSpire!5e0!3m2!1sen!2sie!4v1612288259529!5m2!1sen!2sie" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</footer>
+</body>
+</html>
